@@ -1,7 +1,7 @@
 package org.example.lesson1.ClassWork;
 
-public class Animal {
-    private String name;
+public abstract class Animal {
+    protected String name;
 
     public Animal(String name) {
         this.name = name;
@@ -18,9 +18,8 @@ public class Animal {
         this.name = name;
     }
 
-    public void animalInfo() {
-        System.out.println("Animal with name " + name);
-    }
+    public abstract void animalInfo();
+    public abstract void round();
     public void voice() {
         System.out.println("Animal with name " + name + " sounds loud.");
     }

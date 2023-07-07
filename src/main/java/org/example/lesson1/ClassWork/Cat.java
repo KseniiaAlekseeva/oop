@@ -7,11 +7,6 @@ public class Cat extends Animal {
     public Cat() {
     }
 
-    @Override
-    public void animalInfo() {
-        System.out.println("Cat " + super.getName() + " with color " + color + " age of " + age);
-    }
-
     public Cat(String name, String color, Integer age) {
         super(name);
         this.color = color;
@@ -39,6 +34,16 @@ public class Cat extends Animal {
             this.age = age;
         else
             System.out.println("Incorrect age.");
+    }
+
+    @Override
+    public void round() {
+        System.out.println("Cat with name " + name + " age of " + age + " and color " + color + " is round.");
+    }
+
+    @Override
+    public void animalInfo() {
+        System.out.println("Cat " + name + " with color " + color + " age of " + age);
     }
 
     @Override
