@@ -1,6 +1,6 @@
 package org.example.lesson5.ClassWork.model;
 
-public class Student extends User{
+public class Student extends User {
     int studentId;
 
     public Student(String name, String surname, String patron, int studentId) {
