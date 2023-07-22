@@ -1,6 +1,6 @@
 package org.example.lesson5.HomeWork.controller;
 
-import org.example.lesson5.ClassWork.model.OperationType;
+import org.example.lesson5.HomeWork.model.OperationType;
 import org.example.lesson5.HomeWork.model.Type;
 import org.example.lesson5.HomeWork.service.NumberOperation;
 import org.example.lesson5.HomeWork.view.Log;

@@ -1,8 +1,8 @@
-package org.example.lesson5.HomeWork.view;
+package org.example.lesson6.HomeWork.view;
 
-import org.example.lesson5.HomeWork.model.OperationType;
-import org.example.lesson5.HomeWork.model.MyNumber;
-import org.example.lesson5.HomeWork.model.Type;
+import org.example.lesson6.HomeWork.model.OperationType;
+import org.example.lesson6.HomeWork.model.MyNumber;
+import org.example.lesson6.HomeWork.model.Rational;
 
 public class Log {
     public void logOperation(OperationType type, MyNumber num1, MyNumber num2, MyNumber res) {
@@ -24,7 +24,12 @@ public class Log {
         }
     }
 
-    public void logNumber(Type type, MyNumber num1) {
+    public void logNumber(MyNumber num1) {
+        String type = "";
+        if (num1 instanceof Rational)
+            type = "rational";
+        else
+            type = "complex";
         System.out.println("CREATE " + type + " number: " + num1.toString());
     }
 }
